@@ -7,7 +7,7 @@ const Hero = () => {
   return (
     <section id='home' className={`flex flex-col md:flex-row ${styles.paddingY}`}>
 
-      <div className={`${styles.flexStart} flex-col flex-1 px-6 sm:px-16 xl:px-0`}>
+      <div className={`${styles.flexStart} flex-col flex-1 px-6 sm:px-16 xl:px-0`}>.
         {/* discount */}
         <div className='flex items-center bg-discount-gradient rounded-[10px] px-4 py-[6px] mb-2'>
           <img src={discount} alt="discount" className='w-[32px] h-[32px]' />
@@ -34,7 +34,7 @@ const Hero = () => {
         </div>
 
         <h1 className='font-poppins w-full text-white font-semibold text-[52px] ss:text-[68px] leading-[75px] ss:leading-[100px]' >
-          Payment Medthod.
+          Payment Method.
         </h1>
 
         <p className={`${styles.paragraph} max-w-[470px] mt-5`}>

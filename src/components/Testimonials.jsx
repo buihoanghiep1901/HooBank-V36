@@ -6,7 +6,9 @@ import {feedback} from '../constants/index'
 import FeedbackCard from '../components/FeedbackCard'
 const Testimonials = () => {
   return (
-    <section id='client' className={`${styles.paddingY} flex flex-col`}>
+    <section id='client' className={`${styles.paddingY} flex flex-col relative`}>
+      <div className="absolute z-[0] w-[60%] h-[60%] -right-[50%] rounded-full blue__gradient bottom-40" />
+
       <div className='flex justify-between items-start flex-col md:flex-row '>
         
         <div className='flex-1'>
@@ -23,7 +25,7 @@ const Testimonials = () => {
         </div>
       </div>
 
-      <div className='flex justify-between items-center flex-col md:flex-row feedback-container'>
+      <div className='flex justify-between items-end flex-col md:flex-row feedback-container'>
         {
           feedback.map((fb, index)=>(
             <FeedbackCard feedback={fb} index={index}/>
